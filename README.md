@@ -1,16 +1,90 @@
-# React + Vite
+# 🎯 AssessAI Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AssessAI is an AI-powered online assessment platform built with **React** and **Vite**. It provides a secure and interactive assessment experience with live proctoring, system checks, and AI-ready architecture.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Setup
 
-## React Compiler
+### 1. Clone the repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+git clone <repository-url>
+```
 
-## Expanding the ESLint configuration
+### 2. Navigate to the project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+cd student-assessment-portal
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## ✨ Features
+
+- User Authentication
+- Student Profile
+- Dashboard
+- Skill Selection
+- Assessment Instructions
+- System Check
+- Live Camera & Microphone Detection
+- Secure Online Assessment
+- Question Palette
+- Timer
+- Live Proctoring
+- Fullscreen Enforcement
+- Tab Switch Detection
+- Browser Security Restrictions
+- Warning System
+- Responsive UI
+
+---
+
+## 🛠️ Tech Stack
+
+- React
+- Vite
+- React Router DOM
+- React Icons
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── assets/
+├── hooks/
+├── pages/
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## 👨‍💻 Developer
+
+**Ankit Kumar**
