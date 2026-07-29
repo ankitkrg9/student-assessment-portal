@@ -95,7 +95,23 @@ function Assessment() {
 
         console.log(answers);
 
-        navigate("/result");
+        const totalDuration = 60 * 60;
+
+        const timeTaken = totalDuration - timeLeft;
+
+        navigate("/result", {
+
+            state: {
+
+                questions,
+
+                answers,
+
+                timeTaken
+
+            }
+
+        });
 
     };
 

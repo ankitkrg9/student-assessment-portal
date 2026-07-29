@@ -1,0 +1,757 @@
+/*=========================
+        RESULT PAGE
+==========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.result-page {
+
+    min-height: 100vh;
+
+    background: linear-gradient(180deg,
+            #eef5ff 0%,
+            #f8fafc 100%);
+
+    font-family: "Inter", sans-serif;
+
+}
+
+.result-navbar {
+
+    height: 75px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 50px;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, .06);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+}
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+}
+
+.logo span {
+
+    color: #2563eb;
+
+}
+
+.result-navbar h3 {
+
+    color: #4b5563;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+}
+
+.result-container {
+
+    max-width: 1400px;
+
+    margin: 40px auto;
+
+    padding: 0 25px;
+
+}
+
+.result-container h1 {
+
+    text-align: center;
+
+    font-size: 42px;
+
+    color: #111827;
+
+    margin-bottom: 12px;
+
+}
+
+.result-subtitle {
+
+    text-align: center;
+
+    color: #6b7280;
+
+    font-size: 17px;
+
+    margin-bottom: 45px;
+
+}
+
+.result-layout {
+
+    display: grid;
+
+    grid-template-columns: 2.2fr 1fr;
+
+    gap: 32px;
+
+    align-items: start;
+
+}
+
+.left-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 28px;
+
+}
+
+.right-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 28px;
+
+}
+
+/*=========================
+      SCORE CARD
+==========================*/
+
+.result-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 28px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .08);
+
+    border: 1px solid #edf1f7;
+
+}
+
+.score-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.score-card h3 {
+
+    width: 100%;
+
+    margin-bottom: 25px;
+
+    color: #1f2937;
+
+}
+
+.score-circle {
+
+    position: relative;
+
+    width: 220px;
+
+    height: 220px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.score-circle svg {
+
+    transform: rotate(-90deg);
+
+}
+
+.score-bg {
+
+    fill: none;
+
+    stroke: #edf2f7;
+
+    stroke-width: 12;
+
+}
+
+.score-progress {
+
+    fill: none;
+
+    stroke: #2563eb;
+
+    stroke-width: 12;
+
+    stroke-linecap: round;
+
+    transition: stroke-dashoffset 1.5s ease;
+
+}
+
+.score-text {
+
+    position: absolute;
+
+    text-align: center;
+
+}
+
+.score-text h1 {
+
+    font-size: 46px;
+
+    color: #111827;
+
+    margin: 0;
+
+}
+
+.score-text p {
+
+    margin-top: 6px;
+
+    color: #6b7280;
+
+    font-size: 16px;
+
+}
+
+.grade-badge {
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 6px 14px;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+}
+
+/*=========================
+      SUMMARY CARD
+==========================*/
+
+.summary-card h3 {
+
+    margin-bottom: 25px;
+
+    color: #1f2937;
+
+}
+
+.summary-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+.summary-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #edf2f7;
+
+}
+
+.summary-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 15px;
+
+    color: #374151;
+
+}
+
+.summary-value {
+
+    font-weight: 700;
+
+    color: #111827;
+
+    font-size: 16px;
+
+}
+
+.summary-icon {
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 14px;
+
+}
+
+.summary-icon.green {
+
+    background: #16a34a;
+
+}
+
+.summary-icon.red {
+
+    background: #ef4444;
+
+}
+
+.summary-icon.blue {
+
+    background: #2563eb;
+
+}
+
+.summary-icon.orange {
+
+    background: #f59e0b;
+
+}
+
+.summary-icon.gray {
+
+    background: #6b7280;
+
+}
+
+.summary-icon.gold {
+
+    background: #fbbf24;
+
+}
+
+.summary-icon.purple {
+
+    background: #8b5cf6;
+
+}
+
+/*=========================
+        SKILL CARD
+==========================*/
+
+.skill-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+.skill-card h3 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #1f2937;
+
+}
+
+.skill-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: fit-content;
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    color: #fff;
+
+}
+
+.skill-badge.beginner {
+
+    background: #ef4444;
+
+}
+
+.skill-badge.intermediate {
+
+    background: #f59e0b;
+
+}
+
+.skill-badge.advanced {
+
+    background: #2563eb;
+
+}
+
+.skill-badge.expert {
+
+    background: #16a34a;
+
+}
+
+.feedback-text {
+
+    color: #4b5563;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+}
+
+.recommendation-box {
+
+    margin-top: 10px;
+
+    background: #f8fafc;
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    border: 1px solid #e5e7eb;
+
+}
+
+.recommendation-box h4 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+    color: #111827;
+
+}
+
+.recommendation-box ul {
+
+    padding-left: 20px;
+
+}
+
+.recommendation-box li {
+
+    margin-bottom: 12px;
+
+    color: #4b5563;
+
+    line-height: 1.6;
+
+}
+
+/*=========================
+    SECTION PERFORMANCE
+==========================*/
+
+.section-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+}
+
+.section-card h3 {
+
+    color: #1f2937;
+
+}
+
+.section-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+}
+
+.section-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+.section-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #374151;
+
+}
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 12px;
+
+    background: #e5e7eb;
+
+    border-radius: 999px;
+
+    overflow: hidden;
+
+}
+
+.progress-fill {
+
+    height: 100%;
+
+    border-radius: 999px;
+
+    background: linear-gradient(90deg,
+            #2563eb,
+            #3b82f6);
+
+    transition: width 1s ease;
+
+}
+
+/*=========================
+      RESULT ACTIONS
+==========================*/
+
+.result-actions{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.result-actions button{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.download-btn{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+.download-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.dashboard-btn{
+
+    background:#16a34a;
+
+    color:#fff;
+
+}
+
+.dashboard-btn:hover{
+
+    background:#15803d;
+
+}
+
+/*=========================
+        RESPONSIVE
+==========================*/
+
+@media(max-width:1100px) {
+
+    .result-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .result-navbar {
+
+        height: 90px;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 8px;
+
+        padding: 15px;
+
+    }
+
+    .result-container {
+
+        margin: 25px auto;
+
+        padding: 0 15px;
+
+    }
+
+    .result-container h1 {
+
+        font-size: 32px;
+
+    }
+
+    .score-circle {
+
+        width: 190px;
+
+        height: 190px;
+
+    }
+
+    .score-text h1 {
+
+        font-size: 38px;
+
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .result-card {
+
+        padding: 20px;
+
+    }
+
+    .result-actions {
+
+        flex-direction: column;
+
+    }
+
+    .result-actions button {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+}

@@ -188,13 +188,21 @@ function SystemCheck() {
     };
 
     const navigate = useNavigate();
-    const isSystemReady =
+    const systemReady =
         cameraStatus &&
         micReady &&
         internetStatus &&
         systemCompatible;
     
     const startAssessment = async () => {
+
+        if (!systemReady) {
+
+            alert("Please complete all system checks before starting the assessment.");
+
+            return;
+
+        }
 
         if (!document.fullscreenElement) {
 
@@ -379,9 +387,16 @@ function SystemCheck() {
             <button
                 className="continue-btn"
                 onClick={startAssessment}
+                disabled={!systemReady}
             >
                 Continue to Assessment
             </button>
+
+            {!systemReady && (
+                <p className="system-warning">
+                    Complete all system checks to continue.
+                </p>
+            )}
             <div className="system-errors">
 
                 {!cameraStatus && (

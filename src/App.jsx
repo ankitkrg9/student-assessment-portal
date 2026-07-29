@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Instructions from "./pages/Instructions/Instructions";
 import SystemCheck from "./pages/SystemCheck/SystemCheck";
 import Assessment from "./pages/Assessment/Assessment";
+import Result from "./pages/Result/Result";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/instructions" element={<Instructions />} />
                 <Route path="/system-check" element={<SystemCheck />} />
                 <Route path="/assessment" element={<Assessment />} />
+                <Route path="/result" element={<Result />} />
 
             </Routes>
         </BrowserRouter>

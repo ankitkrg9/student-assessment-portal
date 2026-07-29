@@ -264,7 +264,8 @@ function useProctoring(
 
             e.preventDefault();
 
-            addViolation();
+            // Silently block right click
+            return false;
 
         };
 

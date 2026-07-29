@@ -244,3 +244,15 @@
     margin: 6px 0;
     font-weight: 500;
 }
+
+.system-warning {
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #DC2626;
+
+    font-weight: 600;
+
+}

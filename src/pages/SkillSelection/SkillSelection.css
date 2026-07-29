@@ -162,3 +162,197 @@
     cursor: not-allowed;
 
 }
+
+/*=========================
+        SKILL CARD
+==========================*/
+
+.skill-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+.skill-card h3 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #1f2937;
+
+}
+
+.skill-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: fit-content;
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    color: #fff;
+
+}
+
+.skill-badge.beginner {
+
+    background: #ef4444;
+
+}
+
+.skill-badge.intermediate {
+
+    background: #f59e0b;
+
+}
+
+.skill-badge.advanced {
+
+    background: #2563eb;
+
+}
+
+.skill-badge.expert {
+
+    background: #16a34a;
+
+}
+
+.feedback-text {
+
+    line-height: 1.8;
+
+    color: #4b5563;
+
+    font-size: 15px;
+
+}
+
+.recommendation-box {
+
+    background: #f8fafc;
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    border: 1px solid #e5e7eb;
+
+}
+
+.recommendation-box h4 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+    color: #111827;
+
+}
+
+.recommendation-box ul {
+
+    margin: 0;
+
+    padding-left: 20px;
+
+}
+
+.recommendation-box li {
+
+    margin-bottom: 12px;
+
+    color: #4b5563;
+
+    line-height: 1.6;
+
+}
+
+/*=========================
+      RESULT ACTIONS
+==========================*/
+
+.result-actions {
+
+    margin-top: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.result-actions button {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border: none;
+
+    padding: 14px 26px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.download-btn {
+
+    background: #2563eb;
+
+    color: #fff;
+
+}
+
+.download-btn:hover {
+
+    background: #1d4ed8;
+
+}
+
+.dashboard-btn {
+
+    background: #16a34a;
+
+    color: #fff;
+
+}
+
+.dashboard-btn:hover {
+
+    background: #15803d;
+
+}
